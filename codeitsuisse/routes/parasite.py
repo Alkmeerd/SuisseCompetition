@@ -175,7 +175,7 @@ def evaluateparasite():
     
     submission = []
 
-    for i in range(2):
+    for i in range(20):
         ROOM = data[i].get("room")
         GRID = data[i].get("grid")
         interestedIndividuals = data[i].get("interestedIndividuals")

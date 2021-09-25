@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 def Cal(s):
     def Score(increment):
         if increment >= 7 and increment < 10:
-            return int(increment*1.5)
+            return increment*1.5
         elif increment >= 10:
             return increment*2
         else:

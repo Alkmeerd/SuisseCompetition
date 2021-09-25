@@ -49,7 +49,7 @@ def findingDiagonalPatient(target, row, col):
     return x
 
 def question_1_and_2(grid, interestedIndividuals):
-    print("=========QUESTION1AND2=========")
+    # print("=========QUESTION1AND2=========")
     ####finding patient zero and building lists
     #visited = []
     distance = []
@@ -102,13 +102,13 @@ def question_1_and_2(grid, interestedIndividuals):
             continue
         break
     
-    print("============RESULT============")
-    print("Question 1: ", result1)
-    print("Question 2: ", result2)
+    # print("============RESULT============")
+    # print("Question 1: ", result1)
+    # print("Question 2: ", result2)
     return result1, result2
 
 def question_3(grid):
-    print("=========QUESTION3=========")
+    # print("=========QUESTION3=========")
     ####finding patient zero and building lists
     #visited = []
     distance = []
@@ -158,8 +158,8 @@ def question_3(grid):
             continue
         break
     
-    print("============RESULT============")
-    print("Question 3: ", result3)
+    # print("============RESULT============")
+    # print("Question 3: ", result3)
     return result3
 
 #print("Queue: ",queue)
@@ -175,7 +175,7 @@ def evaluateparasite():
     
     submission = []
 
-    for i in range(20):
+    for i in range(2):
         ROOM = data[i].get("room")
         GRID = data[i].get("grid")
         interestedIndividuals = data[i].get("interestedIndividuals")

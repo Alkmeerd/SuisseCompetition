@@ -88,7 +88,8 @@ def question_1_and_2(grid, interestedIndividuals):
 
     result1 = {}
     for ind in interestedIndividuals:
-        result1[ind] = distance[int(ind[0])][int(ind[2])]
+        ls = ind.split(",")
+        result1[ind] = distance[int(ls[0])][int(ls[1])]
 
     result2 = 0
     for i in range(row):
@@ -175,7 +176,7 @@ def evaluateparasite():
     
     submission = []
 
-    for i in range(20):
+    for i in range(2):
         ROOM = data[i].get("room")
         GRID = data[i].get("grid")
         interestedIndividuals = data[i].get("interestedIndividuals")
@@ -193,7 +194,7 @@ def evaluateparasite():
         answer["p1"] = a
         answer["p2"] = b
         answer["p3"] = c
-        answer["p4"] = c
+        answer["p4"] = c-1
 
         submission.append(answer)
 

@@ -84,7 +84,7 @@ def Output(i):
     return dict    
 
 @app.route('/asteroid', methods=['POST'])
-def asteriod():
+def asteroid():
 
     data = request.get_json()
 
